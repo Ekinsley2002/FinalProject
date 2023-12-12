@@ -5,10 +5,12 @@ body, html {
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
+  flex-direction: column; /* This ensures that children of body are laid out top-to-bottom */
 }
 
 .container {
   text-align: center;
+  margin-bottom: 20px; /* This adds some space between the game board and the addendum */
 }
 
 h1 {
@@ -33,19 +35,17 @@ h1 {
   background-color: black;
 }
 
-/* Existing styles... */
-
+/* Addendum styles */
 .addendum-container {
-  margin-top: 40px; 
-  padding: 20px;
-  width: 80%; 
-  max-width: 600px; 
+  width: 80%;
+  max-width: 600px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
+  text-align: center; 
 }
 
 .addendum-container h2 {
-  text-align: center; 
   margin-bottom: 15px;
 }
 
@@ -55,4 +55,3 @@ h1 {
   border: 1px solid #ddd;
   padding: 10px;
 }
-
